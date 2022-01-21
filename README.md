@@ -5,7 +5,7 @@
     * means route is protected
     ! means route has stretch middleware
 
-    PART ONE - Server & Routes:
+    - PART ONE - Server & Routes:
         - Server
             - Mongo Connected
             - Middleware
@@ -14,7 +14,7 @@
             - /auth
             - /blogs
 
-    PART TWO - Endpoints:
+    ### PART TWO - Endpoints:
         - /auth
             - login
                 - CREATE
@@ -31,7 +31,7 @@
                 - READ
                     - ONLY display NON private blogs
 
-    PART THREE - User & Blog Schema:
+    ### PART THREE - User & Blog Schema:
         - User Schema
             - username: string, required
             - email: string, required
@@ -45,22 +45,22 @@
             - blog_content: string, required
             - private: boolean, required
     
-    PART FOUR - Middleware & Authentication:
+    ### PART FOUR - Middleware & Authentication:
         - BCrypt: Encrypt Password
         - BCrypt: Protected Login
         - JWT: Send Header Token
         - JWT: Authenticate Header
     
-    PART FIVE Documentation & Hosting:
+    ### PART FIVE Documentation & Hosting:
         README.md
             - Names of all ENV Variables
             - Instructions on Installing & Running Locally
             - Endpoints, Parameters, Schema
         Hosted On Heroku
     
-    STRETCH GOALS:
+    ## STRETCH GOALS:
 
-    PART ONE:
+    ### PART ONE:
         - Server
             - Configured Logger
             - Configured Security
@@ -68,7 +68,7 @@
         - Routes
             - /users
 
-    PART TWO:
+    ### PART TWO:
         - /users
             - dynamic id
                 - UPDATE*!
