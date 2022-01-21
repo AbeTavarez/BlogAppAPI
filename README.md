@@ -2,8 +2,8 @@
 
 ## MOD TWO PROJECT
  - Note:
-    - (*) means route is protected
-    - ! means route has stretch middleware
+    - \* means route is protected
+    - \! means route has stretch middleware
 
     ### PART ONE - Server & Routes:
         - Server
