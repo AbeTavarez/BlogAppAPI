@@ -2,10 +2,10 @@
 
 ## MOD TWO PROJECT
  - Note:
-    * means route is protected
-    ! means route has stretch middleware
+    - * means route is protected
+    - ! means route has stretch middleware
 
-    - PART ONE - Server & Routes:
+    ### PART ONE - Server & Routes:
         - Server
             - Mongo Connected
             - Middleware
@@ -58,7 +58,7 @@
             - Endpoints, Parameters, Schema
         Hosted On Heroku
     
-    ## STRETCH GOALS:
+## STRETCH GOALS:
 
     ### PART ONE:
         - Server
