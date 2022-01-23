@@ -1,0 +1,19 @@
+{
+  "name": "blogappapi",
+  "version": "1.0.0",
+  "description": "blog api using node and express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbeTavarez/BlogAppAPI.git"
+  },
+  "author": "Abraham Tavarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbeTavarez/BlogAppAPI/issues"
+  },
+  "homepage": "https://github.com/AbeTavarez/BlogAppAPI#readme"
+}
