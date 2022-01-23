@@ -1,8 +1,13 @@
 const express = require('express');
+const { append } = require('express/lib/response');
+const { default: helmet } = require('helmet');
+const morgan = require('morgan');
 
 require('dotenv').config();
 const server = express();
-server.use(express.json())
+server.use(morgan('dev'))
+server.use(express.json());
+server.use(helmet())
 
 server.get('/', (req, res) => {
     res.status(200).json({msg: 'Welcome to NodeJS server'})
