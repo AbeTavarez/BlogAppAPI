@@ -1,13 +1,21 @@
-const { type } = require('express/lib/response');
 const mongoose = require('mongoose');
 
-const UserSchema = mongoose.Schema({
-    username: {type: String, require: true},
-    email: {type: String, require: true},
-    password: {type: String, require: true},
-    blogs: {type: Array},
-    followers: {type: Array},
-    following: {type: Array}
+const userSchema = mongoose.Schema({
+    username: {
+        type: String, 
+        require: true},
+    email: {
+        type: String, 
+        require: true},
+    password: {
+        type: String, 
+        require: true},
+    birthday: {
+        type: Date, 
+        require: true},
+    age: {
+        type: Number
+    }
 });
 
-export default mongoose.model('User', UserSchema);
+module.export = mongoose.model('User', userSchema);
