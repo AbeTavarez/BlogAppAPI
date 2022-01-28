@@ -1,6 +1,6 @@
 const JWT = require("jsonwebtoken");
 
-const verifyJWT = () => {
+const verifyJWT = (req, res, next) => {
   let TOKEN = req.get("Authorization");
 
   if (TOKEN === null || TOKEN === undefined) {
