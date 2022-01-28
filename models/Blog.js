@@ -1,20 +1,20 @@
 const mongoose = require('mongoose');
 
 const blogSchema = mongoose.Schema({
-    created_by: {
-        type: mongoose.Schema.objectId,
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: true
     },
-    created_at: {
+    createdAt: {
         type: Date,
         default: Date.now
     },
-    blog_title: {
+    blogTitle: {
         type: String,
         required: true
     },
-    blog_content: {
+    blogContent: {
         type: String,
         required: true
     },
