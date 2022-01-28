@@ -38,6 +38,7 @@ router.post("/register", async (req, res) => {
     });
   } catch (err) {
     console.error(err.message);
+    res.status(500).json({ msg: "Server Error" });
   }
 });
 
@@ -81,7 +82,7 @@ router.post("/login", async (req, res) => {
       const TOKEN = JWT.sign(payload, process.env.JWT_SECRET);
       console.log(user); //! TODO: add token expiration
       res.setHeader("Authorization", TOKEN);
-      res.status(200).json({ msg: "Success" });
+      res.status(200).json({ msg: "Success" , userId: user.id});
       });
 
       
