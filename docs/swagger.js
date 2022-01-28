@@ -7,14 +7,18 @@ module.exports = {
     version: "0.1.9",
   },
   paths: {
-    "/api/v1/auth": {
-      get: {
-        summary: "Test Route",
-      },
-    },
     "/api/v1/auth/register": {
       post: {
         summary: "User registration.",
+        parameters: [{
+          name: "newUser",
+          in: "body",
+          schema: {
+
+          },
+          required: true,
+          description: "Registers a user."
+        }]
       },
     },
     "/api/v1/auth/login": {
